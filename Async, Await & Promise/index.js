@@ -83,6 +83,7 @@ const API_URL = 'https://api.github.com/users/theredbandicoot';
 async function getUser() {
   const res = await fetch(API_URL);
   const user = await res.json();
+  console.log('test');
   console.log(user.login);
 }
 
